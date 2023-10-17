@@ -31,7 +31,7 @@ WebView is an enterprise browser plug-in designed for virtual engine. It uses ma
 
 # Using tutorials
 https://www.youtube.com/channel/UCUUFUwaMi5-naF0PZMU9mxg
-https://www.zhihu.com/column/c_1490114276946223104
+https://github.com/aSurgingRiver/WebView/wiki
 
 # Important/Additional Notes:
 We are committed to providing the most efficient browser plug-in. If you have any questions in the process of using, you can contact us through the following ways.
