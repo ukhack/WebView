@@ -11,6 +11,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UHtmlHeaders;
 class UObject;
+class UTexture2D;
 enum class WebView_Keyboard_Mode : uint8;
 #ifdef WEBVIEW_WebBase_generated_h
 #error "WebBase.generated.h already included, missing '#pragma once' in WebBase.h"
@@ -88,10 +89,14 @@ static void FOnBeforePopup_DelegateWrapper(const FMulticastScriptDelegate& OnBef
 
 
 #define FID_HostProject_Plugins_WebView_Source_WebView_Public_WebBase_h_45_DELEGATE \
+static void FOnTextureChanged_DelegateWrapper(const FMulticastScriptDelegate& OnTextureChanged, UTexture2D* OLD, UTexture2D* NEW);
+
+
+#define FID_HostProject_Plugins_WebView_Source_WebView_Public_WebBase_h_46_DELEGATE \
 static void FOnDownloadComplete_DelegateWrapper(const FMulticastScriptDelegate& OnDownloadComplete, const FString& Url, const FString& File);
 
 
-#define FID_HostProject_Plugins_WebView_Source_WebView_Public_WebBase_h_68_DELEGATE \
+#define FID_HostProject_Plugins_WebView_Source_WebView_Public_WebBase_h_69_DELEGATE \
 static void FOnBeforeRequest_DelegateWrapper(const FMulticastScriptDelegate& OnBeforeRequest, const FString& URL, int32 ResourceType, UHtmlHeaders* Headers);
 
 
@@ -109,6 +114,7 @@ static void FOnBeforeRequest_DelegateWrapper(const FMulticastScriptDelegate& OnB
 	DECLARE_FUNCTION(execReopenRender); \
 	DECLARE_FUNCTION(execShowAddress); \
 	DECLARE_FUNCTION(execWebPixel); \
+	DECLARE_FUNCTION(execSilent); \
 	DECLARE_FUNCTION(execZoomLevel); \
 	DECLARE_FUNCTION(execGetUrl); \
 	DECLARE_FUNCTION(execUnbindUObject); \
@@ -117,6 +123,7 @@ static void FOnBeforeRequest_DelegateWrapper(const FMulticastScriptDelegate& OnB
 	DECLARE_FUNCTION(execCallJsonStr); \
 	DECLARE_FUNCTION(execIsloaded); \
 	DECLARE_FUNCTION(execReload); \
+	DECLARE_FUNCTION(execLoadString); \
 	DECLARE_FUNCTION(execLoadURL); \
 	DECLARE_FUNCTION(execExecuteJavascript);
 
